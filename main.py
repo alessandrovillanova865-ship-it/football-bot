@@ -56,9 +56,9 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
             "Usa una formattazione chiara, pulita e pronta per Telegram."
         )
 
-        # Chiamata al modello Gemini aggiornato
+        # Chiamata al modello stabile gemini-1.5-flash
         response = ai_client.models.generate_content(
-            model='gemini-3.8-flash',
+            model='gemini-1.5-flash',
             contents=prompt,
         )
         
